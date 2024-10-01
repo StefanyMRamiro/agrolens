@@ -1,0 +1,7 @@
+/plant-recognition/dist/
+/plant-recognition/node_modules/
+/plant-recognition/.env
+/backend/__pycache__
+/backend/venv
+/backend/.env
+/backend/modelo_identificacao_plantas.keras
