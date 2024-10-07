@@ -1,1 +1,1 @@
-{"root":["./src/App.tsx","./src/Button.tsx","./src/ImagePicker.tsx","./src/main.tsx","./src/vite-env.d.ts"],"version":"5.6.2"}
+{"root":["./src/app.tsx","./src/info.ts","./src/main.tsx","./src/vite-env.d.ts","./src/components/button.tsx","./src/components/details.tsx","./src/components/imagepicker.tsx","./src/components/topbar.tsx","./src/pages/dashboard.tsx","./src/pages/iir.tsx","./src/pages/is.tsx","./src/pages/manejo.tsx","./src/pages/plantrecognition.tsx"],"version":"5.6.2"}

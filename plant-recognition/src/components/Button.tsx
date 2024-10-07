@@ -6,7 +6,7 @@ interface Props {
 function Button({ label, onClick }: Props) {
   return (
     <button
-      className="bg-[#869772] hover:bg-[#9AA889] text-white font-bold py-2 px-4 rounded-full"
+      className="bg-green-800 hover:bg-[#9AA889] text-white font-bold py-2 px-4 rounded-full"
       onClick={() => onClick?.()}
     >
       {label}

@@ -1,7 +1,6 @@
 import os
 from PIL import Image
 import numpy as np
-import uvicorn
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 
 from dotenv import load_dotenv
@@ -13,7 +12,10 @@ load_dotenv()
 
 app = FastAPI()
 
-model = tf.keras.models.load_model(os.getenv("MODEL_PATH"))
+dirname = os.path.dirname(__file__)
+filename = os.path.join(dirname, os.getenv("MODEL_PATH"))
+
+model = tf.keras.models.load_model(filename)
 
 origins = ["*"]
 methods = ["*"]
@@ -49,3 +51,5 @@ def analyse_picture(file: UploadFile):
         result = "Sida spp."
 
     return {"filename": file.filename, "prediction": result, "confidence": float(predictions[0][0])}
+
+
